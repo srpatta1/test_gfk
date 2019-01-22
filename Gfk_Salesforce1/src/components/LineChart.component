@@ -1,5 +1,4 @@
 <apex:component controller="GoogleChartsController">
-
     <!-- Google API inclusion -->
     <apex:includeScript id="a" value="https://www.google.com/jsapi" />
      
@@ -20,6 +19,7 @@
           // [<namespace>.]<controller>.<method>([params...,] <callbackFunction>(result, event) {...}
           // controller : GoogleChartsController
           // method : loadOpps
+          
           GoogleChartsController.loadOpps( 
                  function(result, event){  
                      // load Column chart
