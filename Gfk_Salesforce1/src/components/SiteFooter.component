@@ -2,6 +2,3 @@
   <c:SitePoweredBy />
 </apex:component>
 
-<apex:component id="footerComponent">
-  <c:SitePoweredBy />
-</apex:component>
