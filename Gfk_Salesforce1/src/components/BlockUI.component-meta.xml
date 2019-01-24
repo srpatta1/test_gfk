@@ -3,6 +3,7 @@
     <apiVersion>30.0</apiVersion>
     <label>BlockUI</label>
     <packageVersions>
+        
         <majorNumber>1</majorNumber>
         <minorNumber>2</minorNumber>
         <namespace>SFQF</namespace>
