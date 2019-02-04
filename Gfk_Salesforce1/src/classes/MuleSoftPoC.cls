@@ -12,6 +12,8 @@ public with sharing class MuleSoftPoC {
         req.setEndpoint('https://gfk-eas-event-mock-api.de-c1.eu1.cloudhub.io/api/events');
         req.setBody(reqBody);
     
+       //demo
+       
         Http http = new Http();
   
         HTTPResponse res = http.send(req);
