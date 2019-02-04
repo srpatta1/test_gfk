@@ -10,7 +10,7 @@ public with sharing class RestTest {
         req.setBody(reqBody);
     
         Http http = new Http();
-  
+            
         HTTPResponse res = http.send(req);
 
         System.debug('BODY: '+res.getBody());
@@ -19,9 +19,5 @@ public with sharing class RestTest {
         
         //return new (res.getBody());
     }
-    
-    
-    
-    
     
 }

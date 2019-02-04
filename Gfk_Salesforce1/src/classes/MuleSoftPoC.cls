@@ -19,6 +19,9 @@ public with sharing class MuleSoftPoC {
         HTTPResponse res = http.send(req);
 
         System.debug('BODY: '+res.getBody());
+       
+       //demo 2
+       //demo 3
         System.debug('STATUS:'+res.getStatus());
         System.debug('STATUS_CODE:'+res.getStatusCode());
         
