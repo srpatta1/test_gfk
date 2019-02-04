@@ -21,6 +21,7 @@ public with sharing class MuleSoftPoC {
         System.debug('BODY: '+res.getBody());
        
        //demo 2
+       //demo 3
         System.debug('STATUS:'+res.getStatus());
         System.debug('STATUS_CODE:'+res.getStatusCode());
         
