@@ -7,6 +7,8 @@ public with sharing class RestTest {
         String reqBody= '{"mode": "raw","raw": "[ { \"producer\": \"Workday\", \"type\": \"object\", \"code\": \"create\", \"name\": \"Employee\", \"guid\": \"0010N000048bs4iQAA\", \"description\": \"An employee has been created in Workday.\", \"object\": { \"employeeId\": \"4711\", \"employeeName\": \"Employee One\" }, \"consumers\": \"Workday, SAP\", \"timestamp\": \"yyyy-MM-dd HH:mm:ss.SSS\" }, { \"producer\": \"Workday\", \"type\": \"object\", \"code\": \"update\", \"name\": \"Employee\", \"guid\": \"0010N000048bs4iQAA\", \"description\": \"An employee has been updated in Workday.\", \"object\": { \"employeeId\": \"4711\", \"employeeName\": \"Employee One\" }, \"consumers\": \"Workday, SAP\", \"timestamp\": \"yyyy-MM-dd HH:mm:ss.SSS\" }, { \"producer\": \"Workday\", \"type\": \"object\", \"code\": \"delete\", \"name\": \"Employee\", \"guid\": \"0010N000048bs4iQAA\", \"description\": \"An employee has been deleted in Workday.\", \"object\": { \"employeeId\": \"4711\", \"employeeName\": \"Employee One\" }, \"consumers\": \"Workday, SAP\", \"timestamp\": \"yyyy-MM-dd HH:mm:ss.SSS\" } \n]"}';
         req.setEndpoint('http://gfk-eas-event-mock-api.de-c1.eu1.cloudhub.io/api/events');
         req.setBody(reqBody);
+        
+        //testing for the pull request
     
         Http http = new Http();
         HTTPResponse res = http.send(req);
